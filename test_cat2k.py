@@ -4,7 +4,7 @@ import cv2
 import os
 
 point_path = './cat2k/'
-image_path = './Stimuli/'
+image_path = './cat2k_im/'
 
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('image', 600,600)
