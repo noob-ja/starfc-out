@@ -10,9 +10,10 @@ def move(destination, depth=None):
         else:
             move(destination, os.path.join(depth + [file_or_dir], os.sep))
 
-base = './cat2k'
+base = './fruit_output'
 for category in os.listdir(base):
-    dest = os.path.join(base,category)
+    # dest = os.path.join(base,category)
+    dest = base
     path = os.path.join(dest, 'fixations')
     for fil in os.listdir(path):
         currentFile = os.path.join(path, fil) + '/fixationList.mat'
