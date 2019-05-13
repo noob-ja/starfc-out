@@ -10,7 +10,7 @@ def move(destination, depth=None):
         else:
             move(destination, os.path.join(depth + [file_or_dir], os.sep))
 
-base = './mnist_output'
+base = './mnist_test_output'
 for category in os.listdir(base):
     dest = os.path.join(base,category)
     # dest = base

@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import os
 
-point_path = './mnist_output/'
+point_path = './mnist_test_output/'
 image_path = './mnist_png/testing/'
 
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
@@ -28,7 +28,7 @@ for cat in os.listdir(point_path):
             p2 = points[j]
             print(p1, p2)
             img[p2[1]-rad:p2[1]+rad, p2[0]-rad:p2[0]+rad] = [0, 0, 255]
-            cv2.line(img, tuple(p1), tuple(p2), (0,0,255), 2)
+            cv2.line(img, tuple(p1), tuple(p2), (0,0,255), 1)
 
         cv2.imshow('image', img)
         cv2.waitKey(0)
